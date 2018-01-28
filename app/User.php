@@ -30,7 +30,7 @@ class User extends Authenticatable
 
     public function getAvatar()
     {
-        return 'https://www.gravatar.com/avatar/' . md5($this->email) . '?s=45&d=identicon';
+        return 'https://www.gravatar.com/avatar/'.md5($this->email).'?s=45&d=identicon';
     }
 
     public function getAvatarAttribute()
@@ -48,26 +48,26 @@ class User extends Authenticatable
         return 'username';
     }
 
-    public function isNotMe(User $user)
+    public function isNotMe(self $user)
     {
         return $this->id !== $user->id;
     }
 
-    public function isFollowing(User $user)
+    public function isFollowing(self $user)
     {
         return (bool) $this->following->where('id', $user->id)->count();
     }
 
-    public function canFollow(User $user)
+    public function canFollow(self $user)
     {
-        if (!$this->isNotMe($user)) {
+        if (! $this->isNotMe($user)) {
             return false;
         }
 
-        return !$this->isFollowing($user);
+        return ! $this->isFollowing($user);
     }
 
-    public function canUnfollow(User $user)
+    public function canUnfollow(self $user)
     {
         return $this->isFollowing($user);
     }
