@@ -618,6 +618,11 @@ button,
   cursor: pointer;
 }
 
+a {
+  text-decoration: none;
+  color: #9561e2;
+}
+
 /**
  * Here you would add any of your custom component classes; stuff that you'd
  * want loaded *before* the utilities so that the utilities could still

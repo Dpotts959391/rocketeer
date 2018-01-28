@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="{{ asset('css/fontawesome-all.min.css') }}">
     <link href="{{ asset('css/main.css') }}" rel="stylesheet">
 </head>
-<body class="bg-grey-light">
+<body class="bg-grey-light font-sans">
     <div id="app">
         {{-- <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
