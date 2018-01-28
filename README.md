@@ -2,8 +2,8 @@
 🚀 Twitter Clone Built With Laravel + VueJS
 
 Rocketeer is currently in pre-alpha.  
-[View Live Demo (Stable)](https://rocketeer.develop.scot)  
-[View Live Demo (Dev)](https://rocketeer.develop.scot)
+[Demo (Stable)](https://rocketeer.develop.scot)  
+[Demo (Dev)](https://rocketeer.develop.scot)
 
 ### v1.0 Checklist
 - [x] Authentication
