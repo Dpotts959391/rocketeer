@@ -12,11 +12,11 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="{{ asset('css/fontawesome-all.min.css') }}">
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/main.css') }}" rel="stylesheet">
 </head>
-<body>
+<body class="bg-grey-light">
     <div id="app">
-        <nav class="navbar navbar-default navbar-static-top">
+        {{-- <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
                 <div class="navbar-header">
 
@@ -73,8 +73,9 @@
                     </ul>
                 </div>
             </div>
-        </nav>
+        </nav> --}}
 
+        @include('layouts.partials._navbar')
         @yield('content')
     </div>
 
