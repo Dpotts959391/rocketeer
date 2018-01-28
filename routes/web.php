@@ -22,4 +22,3 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/u/{user}/follow', 'UserController@follow')->name('user.follow');
     Route::get('/u/{user}/unfollow', 'UserController@unFollow')->name('user.unfollow');
 });
-

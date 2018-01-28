@@ -7,7 +7,6 @@ use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
-
     public function index(Request $request, Post $post)
     {
         $allPosts = $post->whereIn(
